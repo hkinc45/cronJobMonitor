@@ -1,0 +1,21 @@
+EVERY SECOND CRONS
+/var/spool/cron/digita88:* * * * * /usr/local/bin/php -q /home2/digita88/public_html/emailer/apps/console/console.php send-campaigns >/dev/null 2>&1
+/var/spool/cron/digita88:* * * * * wget --quiet -O /dev/null https://www.digitalmike.com.ng/quickpost/cron
+/var/spool/cron/digita88:* * * * * wget --quiet -O /dev/null http://www.digitalmike.com.ng/quickpost/cron
+/var/spool/cron/brookwo1:* * * * * /usr/local/bin/php /home/brookwo1/public_html/news/app/console mautic:segments:update > /home/brookwo1/public_html/news/cron_logs/segments_update.log 2>&1
+/var/spool/cron/brookwo1:* * * * * /usr/local/bin/php /home/brookwo1/public_html/news/app/console mautic:campaigns:rebuild > /home/brookwo1/public_html/news/cron_logs/campaigns_rebuild.log 2>&1
+/var/spool/cron/brookwo1:* * * * * /usr/local/bin/php /home/brookwo1/public_html/news/app/console mautic:campaigns:trigger > /home/brookwo1/public_html/news/cron_logs/campaigns_trigger.log 2>&1
+/var/spool/cron/brookwo1:* * * * * /usr/local/bin/php /home/brookwo1/public_html/news/app/console mautic:emails:send > /home/brookwo1/public_html/news/cron_logs/emails_sends.log 2>&1
+/var/spool/cron/brookwo1:* * * * * /usr/local/bin/php /home/brookwo1/public_html/news/app/console mautic:messages:send > /home/brookwo1/public_html/news/cron_logs/messages_sends.log 2>&1
+/var/spool/cron/brookwo1:* * * * * /usr/local/bin/php /home/brookwo1/public_html/news/app/console mautic:broadcasts:send > /home/brookwo1/public_html/news/cron_logs/broadcasts.log 2>&1
+/var/spool/cron/japancus:* * * * * cd /home/japancus/public_html/dolph/periodic; /opt/alt/php72/usr/bin/php -q cron.php
+/var/spool/cron/qabitalw:* * * * * wget --spider -O - https://qabitalwallet.com/instagram/post/cron >/dev/null 2>&1
+11 ACCOUNTS FOUND RUNNING CRONS EVERY SECOND
+FIVE MINUTE CRON
+/var/spool/cron/digita88:*/5 * * * * /usr/local/bin/php -q /home2/digita88/public_html/emailer/apps/console/console.php send-transactional-emails >/dev/null 2>&1
+/var/spool/cron/fxcom:*/5 * * * * /usr/bin/php -q /home2/fxcom/public_html/account/logged/dashboard/process/cronjob.php
+/var/spool/cron/root:*/5 * * * * /usr/local/cpanel/scripts/dcpumon-wrapper >/dev/null 2>&1
+3 ACCOUNTS FOUND RUNNING CRONS EVERY FIVE MINUTES
+TEN MINUTE CRON
+/var/spool/cron/digita88:*/10 * * * * /usr/local/bin/php -q /home2/digita88/public_html/emailer/apps/console/console.php bounce-handler >/dev/null 2>&1
+1 ACCOUNTS FOUND RUNNING CRONS EVERY TEN MINUTE

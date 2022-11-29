@@ -1,0 +1,8 @@
+EVERY SECOND CRONS
+/var/spool/cron/qabitalw:* * * * * wget --spider -O - https://qabitalwallet.com/instagram/post/cron >/dev/null 2>&1
+1 ACCOUNTS FOUND RUNNING CRONS EVERY SECOND
+FIVE MINUTE CRON
+/var/spool/cron/root:*/5 * * * * /usr/local/cpanel/scripts/dcpumon-wrapper >/dev/null 2>&1
+1 ACCOUNTS FOUND RUNNING CRONS EVERY FIVE MINUTES
+TEN MINUTE CRON
+NO RESULT FOUND

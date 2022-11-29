@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+<title>Survey</title>
+<style>
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600|Paytone+One');
+.survey-popup-sec{ margin:0px auto; padding:0px; width:835px; position:relative; box-sizing: border-box;  }
+.survey-popup-sec .survey-popup-content{ background: #f3efb0; margin:0px; padding:40px 50px 57px 50px; width:100%; float:left; box-sizing: border-box; float:left; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;-webkit-box-shadow: 0px 10px 20px 0px rgba(50, 50, 50, 0.52);-moz-box-shadow: 0px 10px 20px 0px rgba(50, 50, 50, 0.52);box-shadow: 0px 10px 20px 0px rgba(50, 50, 50, 0.52); }
+.survey-popup-sec .survey-popup-content h2{ font-family: 'Paytone One', sans-serif; font-size:48px; color:#fff; font-weight:normal; text-shadow: 2px 0 6px #000000; margin:0 0 10px 0; padding:0px;  }
+.survey-popup-sec .survey-popup-content h3{ font-family: 'Montserrat', sans-serif; font-size:24px; color:#fff; font-weight:600; margin:0 0 37px 0;}
+.survey-popup-sec .survey-popup-content h4{ font-family: 'Montserrat', sans-serif; font-size:24px; color:#fff; font-weight:600; margin:0 0 20px 0;}
+.survey-popup-sec .survey-popup-content ul.didyoufind-sec{ background:#00a651; width:100%; float:left; box-sizing: border-box; list-style:none; text-align:center; padding:30px 0px; margin:0 0 38px 0; }
+.survey-popup-sec .survey-popup-content ul.didyoufind-sec li{ display:inline-block; font-family: 'Montserrat', sans-serif; font-size:20px; font-weight:600; color:#FFF; padding:0 30px 0 0;  }
+.survey-popup-sec .survey-popup-content ul.didyoufind-sec li:last-child{ padding-right:0px;}
+.survey-popup-sec .survey-popup-content .sugges-input{ width:calc(60% - 40px); float:left; border:0px; height:60px; padding:0 20px;  box-sizing: border-box; font-size:16px; font-family: 'Montserrat', sans-serif; font-weight:600; color:#000; }
+.survey-popup-sec .survey-popup-content .thanksyou-btn{ float:right; border:0px; margin:0px; width:40%;  box-sizing: border-box; background:#630460; font-size:18px; font-family: 'Montserrat', sans-serif; font-weight:600; color:#fff; height:60px;  }
+.survey-popup-sec .survey-popup-content .shopnow-popup-clsbtn { font-size: 14px; line-height: 18px; width: 28px; height: 28px; -webkit-border-radius: 50%; border-radius: 50%; background: #FFF; position: absolute; right: -14px; top: -14px; border: 0px; -webkit-box-shadow: 0 0 2px 0 rgba(0,0,0,0.27); box-shadow: 0 0 2px 0 rgba(0,0,0,0.27); cursor: pointer; }
+.survey-popup-sec .survey-popup-content .shopnow-popup-clsbtn:hover {color:#000;  background: #f3efb0;}
+.popup-graybox {position: fixed;width: 100%;top: 0;left: 0;height: 100vh;z-index: 99999;align-items: center;display: flex;box-sizing: border-box;overflow: auto;}
+
+@media only screen and (max-width:815px) {
+.survey-popup-sec{width:90%;}
+.survey-popup-sec .survey-popup-content{padding: 25px 35px 35px 35px;}
+.survey-popup-sec .survey-popup-content h2{ font-size:42px; }
+.survey-popup-sec .survey-popup-content h3{font-size:20px; margin-bottom:25px;  }
+.survey-popup-sec .survey-popup-content h4{font-size:20px; }
+.survey-popup-sec .survey-popup-content ul.didyoufind-sec{    margin: 0 0 25px 0;}
+}
+
+@media only screen and (max-width:768px) {
+.survey-popup-sec .survey-popup-content ul.didyoufind-sec li:first-child{ width:100%; margin-bottom:20px;}
+}
+
+@media only screen and (max-width:640px) {
+.survey-popup-sec .survey-popup-content h2{font-size: 38px;   line-height: 42px; margin-bottom: 20px;}
+.survey-popup-sec .survey-popup-content h3{font-size: 18px;}
+.survey-popup-sec .survey-popup-content h4{font-size: 18px;}
+.survey-popup-sec .survey-popup-content .sugges-input{ width:100%; margin-bottom:20px;}
+.survey-popup-sec .survey-popup-content .thanksyou-btn{width:100%; }
+}
+
+@media only screen and (max-width:375px) {
+.survey-popup-sec .survey-popup-content {padding: 20px 20px 20px 20px;}
+.survey-popup-sec .survey-popup-content h2 {font-size: 30px;line-height: 35px;margin-bottom: 15px;}
+.survey-popup-sec .survey-popup-content .sugges-input{ height:45px; font-size: 12px;margin-bottom: 12px;}
+.survey-popup-sec .survey-popup-content .thanksyou-btn	{ height:45px;font-size: 12px;letter-spacing: 0.5px; }
+.survey-popup-sec .survey-popup-content ul.didyoufind-sec{padding:20px;}
+.survey-popup-sec .survey-popup-content ul.didyoufind-sec {margin: 0 0 20px 0;padding: 20px 0px;}
+.survey-popup-sec .survey-popup-content ul.didyoufind-sec li {font-size: 18px;line-height: 23px;padding: 0 10px 0 0;}
+}
+</style>
+</head>
+
+<body>
+<section class="popup-graybox">
+<div class="survey-popup-sec">
+  <div class="survey-popup-content" style=" background: #f3efb0 url(https://cdn.pixabay.com/photo/2016/03/17/23/07/abstract-1264071__340.png) no-repeat center center;background-size: cover; ">
+
+    <ul class="didyoufind-sec">
+
+    
+    </ul>
+
+  </div>
+</div>
+</section>
+</body>
+</html>
